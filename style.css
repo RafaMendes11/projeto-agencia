@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --cor0: #180f4a;
+    --cor1: #ff2978;
+    --cor2: #090422;
+    --cor3: #000000;
+    --fonte-padrao: "Roboto", sans-serif;
+    --font-destaque: 'Lobster', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-padrao)
+}
+
+.navbar {
+    display: flex;
+    flex-flow: row wrap;
+    height: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+.logo {
+    margin-left: 10%;
+    flex: 20%;
+    text-align: left;
+}
+
+.logo h1{
+    font-family: var(--font-destaque);
+    color: var(--cor0);
+    font-size: 34px;
+}
+
+.menu {
+    flex: 70%;
+    text-align: right;
+    padding: 20px;
+}
+
+.menu a{
+    color: #180f4a;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 16px;
+}
+
+.menu a:hover{
+    color: var(--cor1);
+    border-bottom: 2px solid var(--cor0);
+}
+
+#btn{
+    background-color: var(--cor0);
+    padding: 10px 25px;
+    color: white;
+    border-radius: 5px;
+    margin: 0 10% 0 5%;
+}
+
+#btn:hover{
+    border: none;
+    background-color: var(--cor1);
+}
+
+.header{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-top: 100px;
+}
+
+.headline{
+    flex: 40%;
+    margin-left:  10%;
+}
+
+.headline h2{
+    font-weight: 900;
+    font-size: 20px;
+    color: var(--cor0);
+    padding: 0;
+    margin: 0;
+}
+
+.headline p{
+    color: grey;
+    text-align: left;
+}
+
+.contact-btn{
+    display: inline-block;
+    background-color: var(--cor1);
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.contact-btn:hover{
+    background-color: var(--cor0);
+}
+
+.img-headline{
+    margin-right: 10%;
+    flex: 40%;
+    text-align: center;
+}
+
+#img-header{
+    max-width: 90%;
+}
+
+section{
+    display: inline-block;
+    margin: 80px 5% 0 5%;
+    text-align: center;
+    padding: 5%px;
+}
+
+section h2{
+    width: 100%;
+    font-size: 50px;
+    font-family: var(--font-destaque);
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+.servicos{
+    display: inline-block;
+    margin-top: 5%;
+}
+
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 1px solid var(--cor1);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.hidden-text{
+    display: none;
+}
+
+.card:hover{
+    background-color: var(--cor1);
+    color: white;
+    padding: 40px;
+}
+
+.card:hover img{
+    display: none;
+}
+
+.card:hover .card-text{
+    display: none;
+}
+
+.card:hover .hidden-text{
+    display: block;
+}
+
+footer{
+    margin-top: 100px;
+    height: 300px;
+    background-image: linear-gradient(180deg, var(--cor0), var(--cor2), var(--cor3));
+    text-align: center;
+    border-top: 5px solid var(--cor1);
+}
+
+.logo-rodape{
+    padding: 100px;
+}
+
+.agencia{
+    font-family: var(--font-destaque);
+    color: white;
+    font-size: 34px;
+}
+
+.whats{
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+}
